@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box; }\n\nbody {\n  font-family: 'Roboto';\n  font-weight: 400;\n  color: #777777;\n  font-size: 16px;\n  letter-spacing: 2px;\n  padding: 50px;\n  background-color: white;\n\n  .container {\n    background-color: #F7F7F7; }\n\n  .header {\n    height: 95vh;\n    // запись в одну строку\n    background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(\"../image/header-background.jpg\") center / cover no-repeat;\n    //background-repeat: no-repeat\n    //background-size: cover\n    //background-position: center\n    //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)\n    clip-path: polygon(0 20%, 60% 20%, 60% 0, 100% 50%, 60% 100%, 60% 80%, 0 80% ); } }\n\n\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CAAG;;;AAE3B,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,QAAQ;EACrB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,GAAG;EACnB,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,KAAK;CAa8D;;;AApBvF,AASE,IATE,CASF,UAAU,CAAC;EACT,gBAAgB,EAAE,OAAO;CAAG;;;AAVhC,AAYE,IAZE,CAYF,OAAO,CAAC;EACN,MAAM,EAAE,IAAI;EAEZ,UAAU,EAAE,mFAAmF,EAAE,qCAAqC,CAAC,YAAc,CAAC,SAAS;EAK/J,SAAS,EAAE,kEAAmE;CAAG"
+}

@@ -1,0 +1,31 @@
+/* line 1, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+body {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 50px;
+  background-color: white;
+}
+
+/* line 15, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+body .container {
+  background-color: #F7F7F7;
+}
+
+/* line 18, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+body .header {
+  height: 95vh;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("../image/header-background.jpg") center/cover no-repeat;
+  clip-path: polygon(0 20%, 60% 20%, 60% 0, 100% 50%, 60% 100%, 60% 80%, 0 80%);
+}
+
+/*# sourceMappingURL=style.css.map */
