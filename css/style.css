@@ -1,27 +1,32 @@
 /* line 1, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
-* {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* line 6, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 9, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #777777;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 50px;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  padding: 5rem;
   background-color: white;
 }
 
-/* line 15, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 18, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .container {
   background-color: #F7F7F7;
 }
 
-/* line 18, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 21, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header {
   position: relative;
   height: 95vh;
@@ -29,16 +34,16 @@ body .header {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
-/* line 28, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 31, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__logo {
   position: absolute;
-  left: 50px;
-  top: 50px;
-  height: 70px;
-  width: 56px;
+  left: 5rem;
+  top: 5rem;
+  height: 7rem;
+  width: 5.6rem;
 }
 
-/* line 35, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 38, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__box {
   position: absolute;
   width: 100%;
@@ -48,20 +53,20 @@ body .header__box {
   transform: translate(-50%, -50%);
 }
 
-/* line 44, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 47, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__box .title-first {
   color: #FFFFFF;
 }
 
-/* line 47, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 50, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__box .title-first__main {
   text-transform: uppercase;
   display: block;
   font-weight: 800;
-  font-size: 50px;
-  line-height: 60px;
-  letter-spacing: 10px;
-  margin-bottom: 10px;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  margin-bottom: 1rem;
   animation-name: leftToRight;
   animation-duration: 2s;
   animation-delay: 1s;
@@ -69,70 +74,110 @@ body .header__box .title-first__main {
   backface-visibility: hidden;
 }
 
-/* line 62, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 65, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__box .title-first__secondary {
   display: block;
   font-weight: 300;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 5px;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.5rem;
   animation-name: rightToLeft;
   animation-duration: 2s;
   animation-delay: 1s;
   animation-timing-function: ease;
   backface-visibility: hidden;
-  margin-bottom: 65px;
+  margin-bottom: 6.5rem;
 }
 
-/* line 75, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 78, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__box .btn:link, body .header__box .btn:visited {
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   background: white;
-  border-radius: 50px;
+  border-radius: 5rem;
   display: inline-block;
   transition: all .3s;
+  font-size: 2rem;
 }
 
-/* line 84, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 89, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__box .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
-/* line 87, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+/* line 92, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+body .header__box .btn:hover::after {
+  opacity: 0;
+  transform: scaleX(1.5) scaleY(1.7);
+}
+
+/* line 97, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
 body .header__box .btn:active {
   transform: translateY(-2px);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+/* line 100, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+body .header__box .btn::after {
+  content: '';
+  background: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+/* line 112, D:/Frontend-2021/verstka/project_ballons/sass/style.sass */
+body .header__box .btn_animated {
+  animation: btnToUp .5s ease-out .7s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes leftToRight {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0rem);
   }
 }
 
 @keyframes rightToLeft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes btnToUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }
 
