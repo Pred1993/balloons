@@ -3,3 +3,7 @@ const user1 = {
     age: 25
 }
 
+const user2 = {
+    name: 'Alex',
+    age: 27
+}
