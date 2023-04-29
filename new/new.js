@@ -22,7 +22,3 @@ const user5 = {
     name: 'Lena',
     age: 40
 }
-const user1 = {
-    name: 'Oleg',
-    age: 49
-}
