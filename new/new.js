@@ -1,6 +1,6 @@
 const user1 = {
-    name: 'Artem',
-    age: 25
+    name: 'Oleg',
+    age: 49
 }
 
 const user2 = {
@@ -21,4 +21,8 @@ const user4 = {
 const user5 = {
     name: 'Lena',
     age: 40
+}
+const user1 = {
+    name: 'Oleg',
+    age: 49
 }
