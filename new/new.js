@@ -22,3 +22,8 @@ const user5 = {
     name: 'Lena',
     age: 40
 }
+
+const user6 = {
+    name: 'Lena',
+    age: 40
+}
